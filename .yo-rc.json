@@ -1,0 +1,36 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.lezequielm.confirmacion"
+    },
+    "jhipsterVersion": "6.2.0",
+    "applicationType": "monolith",
+    "baseName": "Confirmacion",
+    "packageName": "com.lezequielm.confirmacion",
+    "packageFolder": "com/lezequielm/confirmacion",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "YzllNjhlM2FiYjY3ODNjZGUwNGMyYWQ4MzA5NDhmMGM4ZTc0ZmI5MzE0YTNmMGFmZGNiMjBjZWU1Y2YyNmNiNGFmZDdiMWE4MGNiODhmNGE0YjJhNjBlMmZkOGVkODUwY2E0YzFjOTEzNTgxMmUwNTZiNjg0MmEzY2YwNDZhYzQ=",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}

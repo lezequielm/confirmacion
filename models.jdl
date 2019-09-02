@@ -1,0 +1,39 @@
+entity Catecumeno {
+	nombre String required
+    documento String required
+	fechaDeNacimiento ZonedDateTime
+}
+
+entity Imagen {
+	imagen ImageBlob
+}
+
+entity Asistencia {
+	fechaDeEncuentro ZonedDateTime required
+    presente Boolean required
+    justificado Boolean
+    justificacion String
+}
+
+entity Documentacion {
+	tipo TipoDeDocumentacion
+    descripcion String
+}
+
+enum TipoDeDocumentacion {
+	COPIA_DE_DNI,
+    CERTIFICADO,
+    OTRO
+}
+
+relationship OneToOne {
+	Catecumeno{foto} to Imagen
+    Documentacion{imagen} to Imagen
+}
+relationship OneToMany {
+	Documentacion{catecumeno(nombre)} to Catecumeno{documentaciones(descripcion)}
+  	Asistencia{catecumeno(nombre)} to Catecumeno{Asistencias(fechaDeEncuentro)} 
+}
+
+paginate * with pagination
+dto * with mapstruct
